@@ -1,0 +1,108 @@
+@keyframes flip_vertical {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+#login {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/forest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+#login-page {
+  margin: 100px 50px;
+}
+/* Welcome Header */
+
+.welcome-header {
+  margin-bottom: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+.welcome-header__title-sub {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.welcome-header__title {
+  font-size: 70px;
+  font-weight: 600;
+
+  background-color: rgba(164, 196, 22, 0.7);
+  -webkit-text-stroke: 2px #0e130d; /* width and color */
+  padding: 50px 50px;
+  border: 10px solid rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+}
+
+/* Login Form */
+
+#login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-form input,
+a {
+  font-family: "Quicksand", sans-serif;
+}
+
+#login-form input:not([type="submit"]) {
+  opacity: 60%;
+  width: 300px;
+  border: none;
+  padding: 15px 15px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+#login-form input:focus {
+  opacity: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0);
+}
+
+#login-form input[type="submit"] {
+  padding: 20px 20px;
+  border-radius: 50%;
+  background-color: rgb(169, 180, 126);
+  font-weight: bolder;
+}
+
+#login-form input[type="submit"]:hover {
+  animation: flip_vertical 4s ease-in-out infinite;
+}
+
+#login-form a {
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+#login-form a:hover {
+  color: burlywood;
+}
