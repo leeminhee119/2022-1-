@@ -5,7 +5,7 @@
 
 .logo {
     margin: 20px;
-    font-family: "Quicksand", sans-serif;
+    /* font-family: "Quicksand", sans-serif; 필요없음 - body에 이미 */
     font-size: 40px;
     font-weight: 600;
     color: white;
@@ -13,4 +13,5 @@
 }
 body {
     background-color: #DCE2D2;
+    font-family: "Quicksand", sans-serif;
 }
