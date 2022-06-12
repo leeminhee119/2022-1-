@@ -10,18 +10,223 @@
     <script defer src="js/custom.js"></script>
   </head>
   <body>
+
     <!-- logo -->
-    <div class="logo">
-      <span>HEALTHY TOGETHER</span>
-    </div>
+    <header class="logo">
+      <a href="home.html">
+          <span>HEALTHY TOGETHER</span>
+      </a>
+    </header>
+
     
-    
+    <section id="section__menu-planner">
+      <div class="select">
+        <div class="select__range">
+            <div><input type="radio" name="range" value="all" checked="checked"> VIEW ALL</div>
+            <div><input type="radio" name="range" value="private"> VIEW MINE</div>
+        </div>
+        <div class="select__type">
+            <div class="select__type-full">
+                <span>Vegetarian</span>
+                <!-- <hr> -->
+                <div><input type="checkbox" class="type_vegan" value="vegan" checked="checked"> Vegan</div>
+                <div><input type="checkbox" class="type_vegan" value="lacto"> Lacto</div>
+                <div><input type="checkbox" class="type_vegan" value="ovo"> Ovo</div>
+                <div><input type="checkbox" class="type_vegan" value="lactoovo"> Lacto Ovo</div>
+            </div>
+            <div class="select__type-semi">
+                <span>Semi Vegetarian</span>
+                <!-- <hr> -->
+                <div><input type="checkbox" class="type_semi" value="pollo"> Pollo</div>
+                <div><input type="checkbox" class="type_semi" value="pesco"> Pesco</div>
+                <div><input type="checkbox" class="type_semi" value="flexitarian"> Flexitarian</div>
+            </div>
+        </div>
+        <div class="select__menu">
+          <select name="menu" id="menu" multiple ondblclick="window.open(value,'_blank');">
+            <option class="0 vegan" value="#">Tofu and chestnut mushroom scramble</option>
+            <option class="1 vegan" value="#">Lentil and bean chilli</option>
+            <option class="2 lacto" value="#">African stew</option>
+            <option class="3 lacto" value="#">Apple and pecan porrclassge with maple syrup</option>
+            <option class="4 ovo" value="#">Baked katlama</option>
+            <option class="5 ovo" value="#">Grilled pumpkin and black bean burger</option>
+            <option class="6 lactoovo" value="#">Carrot and courgette cannelloni</option>
+            <option class="7 lactoovo" value="#">Sweet potato gnocchi</option>
+          </select>
+          <span>Double click the menu if you want to get the information.</span>
+          <button id="add_button" onclick="addMenu()">
+            Add to My Menu
+          </button>
+        </div>
+        <div class="select__date">
+          <span>Select Date</span>
+          <div>
+            <input id="select_date" type="date">
+            <!-- <i class="fa-solid fa-circle-check" onclick="input(event)"></i> -->
+          </div>
+
+        </div>
+      </div>
+
+      <article class="my_menu">
+        <div class="my_menu__background">
+          <div class="my_menu__title">Today's MENU</div>
+          <div class="my_menu__contents">
+            <div class="my_menu__contents-default">
+              <span>Select date to see your menu</span>
+            </div>
+            <div class="my_menu__contents-selected">
+              <ul>
+                <li class="0 selected">
+                  <img width="90px" height="90px" src="images/menu0.png" alt="IMAGE: Tofu and chestnut mushroom scramble">
+                  <div class="menu_text">
+                    <span class="menu_title">Tofu and chestnut mushroom scramble</span>
+                    <div class="nutrition">
+                      <span>Carbs(g): </span>
+                      <span class="carbs">44.9</span>
+                      <span> / Protein(g): </span>
+                      <span class="protein">17.6</span>
+                      <span> / Fat(g): </span>
+                      <span class="fat">7.8</span>
+                      <i class="fa-regular fa-trash-can" style="margin-left: 9px; font-size: 20px;"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="1 selected">
+                  <img width="90px" height="90px" src="images/menu1.png" alt="IMAGE: Lentil and bean chilli">
+                  <div class="menu_text">
+                    <span class="menu_title">Lentil and bean chilli</span>
+                    <div class="nutrition">
+                      <span>Carbs(g): </span>
+                      <span class="carbs">118.2</span>
+                      <span> / Protein(g): </span>
+                      <span class="protein">27.4</span>
+                      <span> / Fat(g): </span>
+                      <span class="fat">7.7</span>
+                      <i class="fa-regular fa-trash-can" style="margin-left: 9px; font-size: 20px;"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="2 selected">
+                  <img width="90px" height="90px" src="images/menu2.png" alt="IMAGE: Tofu and chestnut mushroom scramble">
+                  <div class="menu_text">
+                    <span class="menu_title">African stew</span>
+                    <div class="nutrition">
+                      <span>Carbs(g): </span>
+                      <span class="carbs">18.5</span>
+                      <span> / Protein(g): </span>
+                      <span class="protein">5.4</span>
+                      <span> / Fat(g): </span>
+                      <span class="fat">7.2</span>
+                      <i class="fa-regular fa-trash-can" style="margin-left: 9px; font-size: 20px;"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="3">
+                  <img width="90px" height="90px" src="images/menu3.png" alt="IMAGE: Tofu and chestnut mushroom scramble">
+                  <div class="menu_text">
+                    <span class="menu_title">Apple and pecan porrclassge with maple syrup</span>
+                    <div class="nutrition">
+                      <span>Carbs(g): </span>
+                      <span class="carbs">64.5</span>
+                      <span> / Protein(g): </span>
+                      <span class="protein">14.4</span>
+                      <span> / Fat(g): </span>
+                      <span class="fat">12.5</span>
+                      <i class="fa-regular fa-trash-can" style="margin-left: 9px; font-size: 20px;"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="4">
+                  <img width="90px" height="90px" src="images/menu4.png" alt="IMAGE: Tofu and chestnut mushroom scramble">
+                  <div class="menu_text">
+                    <span class="menu_title">Baked katlama</span>
+                    <div class="nutrition">
+                      <span>Carbs(g): </span>
+                      <span class="carbs">80.0</span>
+                      <span> / Protein(g): </span>
+                      <span class="protein">24.2</span>
+                      <span> / Fat(g): </span>
+                      <span class="fat">13.4</span>
+                      <i class="fa-regular fa-trash-can" style="margin-left: 9px; font-size: 20px;"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="5">
+                  <img width="90px" height="90px" src="images/menu5.png" alt="IMAGE: Tofu and chestnut mushroom scramble">
+                  <div class="menu_text">
+                    <span class="menu_title">Grilled pumpkin and black bean burger</span>
+                    <div class="nutrition">
+                      <span>Carbs(g): </span>
+                      <span class="carbs">37.6</span>
+                      <span> / Protein(g): </span>
+                      <span class="protein">19.3</span>
+                      <span> / Fat(g): </span>
+                      <span class="fat">6.8</span>
+                      <i class="fa-regular fa-trash-can" style="margin-left: 9px; font-size: 20px;"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="6">
+                  <img width="90px" height="90px" src="images/menu6.png" alt="IMAGE: Tofu and chestnut mushroom scramble">
+                  <div class="menu_text">
+                    <span class="menu_title">Carrot and courgette cannelloni</span>
+                    <div class="nutrition">
+                      <span>Carbs(g): </span>
+                      <span class="carbs">55</span>
+                      <span> / Protein(g): </span>
+                      <span class="protein">12.4</span>
+                      <span> / Fat(g): </span>
+                      <span class="fat">14.5</span>
+                      <i class="fa-regular fa-trash-can" style="margin-left: 9px; font-size: 20px;"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="7">
+                  <img width="90px" height="90px" src="images/menu7.png" alt="IMAGE: Tofu and chestnut mushroom scramble">
+                  <div class="menu_text">
+                    <span class="menu_title">Sweet potato gnocchi</span>
+                    <div class="nutrition">
+                      <span>Carbs(g): </span>
+                      <span class="carbs">77.9</span>
+                      <span> / Protein(g): </span>
+                      <span class="protein">14.8</span>
+                      <span> / Fat(g): </span>
+                      <span class="fat">7.7</span>
+                      <i class="fa-regular fa-trash-can" style="margin-left: 9px; font-size: 20px;"></i>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="my_menu__nutritions">
+              <span id="my_menu__nutritions-title">Today's NUTRITION:</span>
+              <div id="my_menu__nutritions-context">
+                <span>Carbs(g): </span>
+                <span class="carbs">-</span>
+                <span> / Protein(g): </span>
+                <span class="protein">-</span>
+                <span> / Fat(g): </span>
+                <span class="fat">-</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </article>
+
+    </section>
+
+
+  
+
 
     <!-- Navigation Bar -->
-    <nav class="nav-bar">
+    <nav>
       <ul class="nav__list">
         <li class="nav__btn">
-          <a class="nav__link" href="home.html.html">
+          <a class="nav__link" href="home.html">
             <i class="fa-solid fa-house nav__i"></i>
           </a>
           <div class="nav__btn-description">HOME</div>

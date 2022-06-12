@@ -1,0 +1,174 @@
+#section__menu-planner {
+    position: relative;
+}
+.select {
+    position: absolute;
+    left: 100px;
+}
+.select__range, 
+.select__type,
+.select__menu,
+.select__date {
+    border: 5px ridge var(--theme-color_lightwood);
+    background-color: var(--theme-color_lightwood);
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin: 10px;
+}
+
+/* select vegetarian type - checkbox */
+.select__type {
+    display: flex;
+    justify-content: space-around;
+}
+.select__type span, 
+.select__range,
+.select__date>span {
+    display: block;
+    font-weight: 600;
+}
+.select__type span {
+    margin-bottom: 10px;
+}
+
+/* select menu */
+.select__menu {
+    padding: 30px;
+    padding-bottom: 60px;
+}
+.select__menu>span{
+    font-style: italic;
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+select#menu {
+    height: 300px;
+    width: 100%;
+    background-color: var(--theme-color_avocado);
+    border: none;
+    font-family: "Quicksand", sans-serif;
+    overflow-y: auto;
+}
+#menu option:not(.vegan) {
+    display: none;
+}
+
+#add_button {
+    background-color: var(--theme-color_lightgreen);
+    width: 150px;
+    text-align: center;
+    font-family: "Sedgwick Ave", sans-serif;
+    padding: 10px 0;
+    border-radius: 50%;
+    border-style: ridge;
+    border-width: 5px;
+    position: relative;
+    left: 180px;
+    top: 30px;
+}
+/* select date */
+.select__date {
+    display: flex;
+    flex-direction: column;
+}
+.select__date>div {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.select__date input[type="date"] {
+    width: 100%;
+}
+
+
+
+/* my_menu (Right Side of Screen) */ 
+.my_menu {
+    position: absolute;
+    left: 400px;
+}
+.my_menu {
+    position: relative;
+    width: 700px;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 580px;
+    background-image: url(../../images/corkboard.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+.my_menu__title {
+    font-weight: 900;
+    color: black;
+    font-size: 50px;
+    font-family: "Sedgwick Ave", sans-serif;
+    text-align: center;
+    margin-top: 60px;
+}
+.my_menu__contents{
+    width: 600px;
+    height: 700px; 
+    position: relative;
+}
+.my_menu__contents-default{
+    padding: 100px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    display: none;
+}
+.my_menu__contents-selected {
+    padding: 40px;
+    height: 500px;
+    overflow-y: auto;
+    /* display: none; */
+}
+
+
+.my_menu__contents-selected li {
+    display: none;
+}
+.my_menu__contents-selected li.selected {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+}
+
+.my_menu__contents-selected .menu_text {
+    margin-left: 20px;
+}
+.my_menu__contents-selected .menu_title {
+    /* font-family: "Sedgwick Ave", sans-serif; */
+    font-size: 30px;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.2);
+}
+.my_menu__contents-selected .nutrition {
+    margin-top: 10px;
+    font-weight: 600;
+}
+.my_menu__contents-selected img {
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.my_menu__nutritions {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+#my_menu__nutritions-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+#my_menu__nutritions-context {
+    margin-top: 10px;
+}

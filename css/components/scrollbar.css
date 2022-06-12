@@ -1,0 +1,16 @@
+/* today's menu, select menu - scroll bar style */
+
+.my_menu__contents-selected::-webkit-scrollbar,
+select#name::-webkit-scrollbar{
+    width: 10px;
+}
+.my_menu__contents-selected::-webkit-scrollbar-thumb,
+select#name::-webkit-scrollbar-thumb{
+    background-color: var(--theme-color_lightwood);
+    border-radius: 10px;
+}
+.my_menu__contents-selected::-webkit-scrollbar-track,
+select#name::-webkit-scrollbar-track{
+    background-color: var(--theme-color_avocado);
+    border-radius: 10px;
+}
