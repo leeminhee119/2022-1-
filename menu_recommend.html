@@ -20,7 +20,7 @@
 
     
     <section class="main main-recommend">
-      <div id="select_article_range">
+      <div class="article_header">
         <form action="#">
           <span><input type="checkbox">Vegan</span>
           <span><input type="checkbox">Lacto</span>
@@ -64,6 +64,10 @@
             <li><span>14</span>Southwest Pasta Salad</li></a>
         </ul>
       </article>
+      <button id="upload_post" onclick="window.open('upload_post.html')">
+        Upload My Recipe
+        <i class="fa-solid fa-pen"></i>
+      </button>
       <div id="searchbox">
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" placeholder="Search">
@@ -86,12 +90,12 @@
           <div class="nav__btn-description">HOME</div>
         </li>
         <li class="nav__btn">
-          <a class="nav__link nav__here" href="menu_planner.html">
+          <a class="nav__link" href="menu_planner.html">
             <i class="fa-regular fa-calendar nav__i"></i>
           </a>
           <div class="nav__btn-description">MENU PLANNER</div>
         </li>
-        <li class="nav__btn">
+        <li class="nav__btn nav__here">
           <a class="nav__link" href="menu_recommend.html">
             <i class="fa-regular fa-thumbs-up nav__i"></i>
           </a>
@@ -101,7 +105,7 @@
           <a class="nav__link" href="substitutes.html">
             <i class="fa-solid fa-building nav__i"></i>
           </a>
-          <div class="nav__btn-description">ALTERNATIVES</div>
+          <div class="nav__btn-description">SUBSTITUTES</div>
         </li>
       </ul>
     </nav>

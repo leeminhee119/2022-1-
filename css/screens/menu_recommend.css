@@ -1,15 +1,17 @@
 .main-recommend {
-    padding: 0 100px;
+    width: 1200px;
+    position: absolute;
+    left: 80px;
     font-size: 20px;
 }
-#select_article_range {
+.article_header {
     margin-bottom: 30px;
     border: 1px solid rgba(0,0,0,0.4);
     border-radius: 10px;
     padding: 20px;
 }
 #recommend-list {
-    background-color: rgba(255,255,255,0.3)
+    background-color: rgba(255,255,255,0.3);
 }
 #article_headline {
     padding: 10px 0;
@@ -33,20 +35,34 @@
 .article_list li:hover {
     font-weight: 600;
 }
-.article_list li span{
+.article_list li span:not(.article-title){
     margin-left: 50px;
     margin-right: 180px;
 }
 
-#searchbox {
+#upload_post {
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid var(--theme-color);
     position: absolute;
     margin-top: 30px;
-    right: 120px;    
-    display: flex;
+    background-color: white;
+}
+#upload_post:hover {
+    background-color: var(--theme-color_lightgreen);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    border: 2px solid var(--theme-color);
+    transition: 0.3s ease-in-out;
+}
+#searchbox {
+    position: absolute;
+    right: 0;
+    margin-top: 30px;
+    display: inline-flex;
     align-items: center;
 }
 #searchbox input {
-    border: none;
+    border: 2px solid var(--theme-color);
     padding: 10px;
     border-radius: 50px;
     margin-left: 10px;

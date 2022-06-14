@@ -24,6 +24,7 @@
     box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
     border-radius: 20px;
     transition: 0.3s ease-in-out;
+    transform: translateX(-10px) translateY(-10px);
 }
 .corp_image {
     width: 200px;

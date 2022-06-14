@@ -8,7 +8,7 @@
 }
 .nav__link i {
     font-size: 40px;
-    color: #636263;
+    color: var(--theme-color);
 }
 .nav__here i {
     color: black;

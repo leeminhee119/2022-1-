@@ -3,8 +3,9 @@
 @import "screens/login.css";
 @import "screens/menu_planner.css";
 @import "screens/home.css";
-@import "screens/alternatives.css";
+@import "screens/substitutes.css";
 @import "screens/menu_recommend.css";
+@import "screens/upload.css";
 @import "components/nav.css";
 @import "components/scrollbar.css";
 
