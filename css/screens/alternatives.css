@@ -1,0 +1,43 @@
+/*  substitutes screen   */
+#main-corporations {
+    padding: 150px;
+    padding-top: 0;
+    box-sizing: border-box;
+    
+}
+#substitute_title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#substitute_sub {
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+.corp {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.corp:hover {
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+.corp_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.corp_info{
+    margin-left: 30px;
+}
+.corp_info span{
+    font-size: 30px;
+    font-weight: 600;
+}
+.corp_info p{
+    padding: 10px;
+    font-size: 20px;
+}

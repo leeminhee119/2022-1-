@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Quicksand:wght@300;600&family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Kdam+Thmor+Pro&family=Quicksand:wght@300;600&family=Sedgwick+Ave&display=swap');
 @import "reset.css";
 @import "screens/login.css";
 @import "screens/menu_planner.css";
+@import "screens/home.css";
+@import "screens/alternatives.css";
+@import "screens/menu_recommend.css";
 @import "components/nav.css";
 @import "components/scrollbar.css";
 
@@ -11,7 +14,6 @@
     --theme-color_lightgreen: rgba(164, 196, 22, 0.7);
     --theme-color_lightwood: #D3A37D;
 }
-
 
 .logo span{
     font-family: "Sedgwick Ave", sans-serif;
@@ -31,10 +33,14 @@
     0 6px 3px #5f5e5d;
 }
 body {
+    /* background-image: url(../images/forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
     background-color: var(--theme-color_avocado);
     font-family: "Quicksand", sans-serif;
+    height: 150vh;
 }
-header {
+.logo {
     padding: 20px;
     position: fixed;
     top: 0;
@@ -43,7 +49,30 @@ header {
     margin-left: 80px;
     background-color: var(--theme-color_avocado);
 }
-section {
+footer {
+    padding-left: 100px;
+    box-sizing: border-box;
+    position: relative;
+    top: 150vh;
+}
+footer div {
+    border-top: 1px solid black;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 85%;
+}
+footer span {
+    display: block;
+    color: black;
+}
+footer span:first-child {
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+section.main {
+    position: relative;
     margin-top: 130px;
     margin-left: 80px;
 }

@@ -1,4 +1,4 @@
-#section__menu-planner {
+section.main {
     position: relative;
 }
 .select {
@@ -121,13 +121,13 @@ select#menu {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
-    display: none;
+    /* display: none; */
 }
 .my_menu__contents-selected {
     padding: 40px;
     height: 500px;
     overflow-y: auto;
-    /* display: none; */
+    display: none;
 }
 
 

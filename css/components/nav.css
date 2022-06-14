@@ -18,6 +18,8 @@
 }
 .nav__link i:hover {
     color: black;
+    transform: translateX(15%);
+    transition: 0.3s ease-in-out;
 }
 
 .nav__btn-description {

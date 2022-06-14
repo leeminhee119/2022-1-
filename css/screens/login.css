@@ -41,7 +41,7 @@ body#login {
 .welcome-header__title {
   font-size: 70px;
   font-weight: 600;
-
+  font-family: "Sedgwick Ave", sans-serif;
   background-color: var(--theme-color_lightgreen);
   -webkit-text-stroke: 0.5px #0e130d; 
   padding: 50px 50px;
