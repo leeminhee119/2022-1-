@@ -1,6 +1,6 @@
 .main-recommend {
     width: 1200px;
-    position: absolute;
+    /* position: absolute; */
     left: 80px;
     font-size: 20px;
 }
@@ -21,9 +21,11 @@ thead {
 }
 tr {
     border-bottom: 1px solid black;
+    position: relative;
 }
 th, td {
     padding: 10px 0;
+    /* box-sizing: border-box; */
 }
 td.art_no {
     text-align: center;
