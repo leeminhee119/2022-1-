@@ -10,34 +10,30 @@
     border-radius: 10px;
     padding: 20px;
 }
-#recommend-list {
+
+table {
+    width: 100%;
     background-color: rgba(255,255,255,0.3);
 }
-#article_headline {
-    padding: 10px 0;
+thead {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
-#headline-title, #headline-no{
-    display: inline-block;
-    text-align: center;
-}
-#headline-no{
-    width: 10%;
-}
-#headline-title{
-    width: 80%;
-}
-.article_list li {
-    padding: 10px 0;
+tr {
     border-bottom: 1px solid black;
 }
-.article_list li:hover {
-    font-weight: 600;
+th, td {
+    padding: 10px 0;
 }
-.article_list li span:not(.article-title){
-    margin-left: 50px;
-    margin-right: 180px;
+td.art_no {
+    text-align: center;
+}
+td.art_title {
+    padding-left: 100px;
+}
+
+.art_title a:hover {
+    font-weight: 600;
 }
 
 #upload_post {

@@ -22,19 +22,69 @@
     <section class="main main-recommend">
       <div class="article_header">
         <form action="#">
-          <span><input type="checkbox">Vegan</span>
-          <span><input type="checkbox">Lacto</span>
-          <span><input type="checkbox">Ovo</span>
-          <span><input type="checkbox">Lacto Ovo</span>
+          <span><input type="checkbox" checked="checked" value="Vegan">Vegan</span>
+          <span><input type="checkbox" checked="checked" value="Lacto">Lacto</span>
+          <span><input type="checkbox" checked="checked" value="Ovo">Ovo</span>
+          <span><input type="checkbox" checked="checked" value="Lacto Ovo">Lacto Ovo</span>
         </form>
       </div>
       <article id="recommend-list">
-        <div id="article_headline">
+        <!-- <div id="article_headline">
           <span id="headline-no">No.</span>
           <span id="headline-title">Title</span>
-        </div>
-        <ul>
-          <a class="article_list a_ovo" href="">
+        </div> -->
+        <table>
+          <thead>
+            <tr><th>Title</th></tr>
+          </thead>
+          <tbody>
+            <tr class="Vegan">
+              <!-- <td class="art_no">1</td> -->
+              <td class="art_title"><a>Grilled Pumpkin and Black Bean Burger</a></td></tr>
+            <tr class="Lacto">
+              <!-- <td class="art_no">2</td> -->
+              <td class="art_title"><a>Italian Stuffed Peppers</a></td></tr>
+            <tr class="Lacto Ovo">
+              <!-- <td class="art_no">3</td> -->
+              <td class="art_title"><a>White Chickpea Chili</a></td></tr>
+            <tr class="Ovo">
+              <!-- <td class="art_no">4</td> -->
+              <td class="art_title"><a>Pan Chickpea Fajitas</a></td></tr>
+            <tr class="Lacto">
+              <!-- <td class="art_no">5</td> -->
+              <td class="art_title"><a>Apple and Pecan Porrclassge</a></td></tr>
+            <tr class="Vegan">
+              <!-- <td class="art_no">6</td> -->
+              <td class="art_title"><a>Baked Katlama</a></td></tr>
+            <tr class="Lacto Ovo">
+              <!-- <td class="art_no">7</td> -->
+              <td class="art_title"><a>Sweet Potato Gnocchi</a></td></tr>
+            <tr class="Lacto Ovo">
+              <!-- <td class="art_no">8</td> -->
+              <td class="art_title"><a>Carrot and Courgette Cannelloni</a></td></tr>
+            <tr class="Vegan">
+              <!-- <td class="art_no">9</td> -->
+              <td class="art_title"><a>Ravioli with Peas and Asparagus</a></td></tr>
+            <tr class="Lacto Ovo">
+              <!-- <td class="art_no">10</td> -->
+              <td class="art_title"><a>Chocolate Peanut Butter Oat Milk Smoothie</a></td></tr>
+            <tr class="Ovo">
+              <!-- <td class="art_no">11</td> -->
+              <td class="art_title"><a>Mediterranean Garbanzo Bean Salad</a></td></tr>
+            <tr class="Ovo">
+              <!-- <td class="art_no">12</td> -->
+              <td class="art_title"><a>Crispy Patato Tacos</a></td></tr>
+            <tr class="Ovo">
+              <!-- <td class="art_no">13</td> -->
+              <td class="art_title"><a>Lentil Tortila Soup</a></td></tr>
+            <tr class="Lacto">
+              <!-- <td class="art_no">14</td> -->
+              <td class="art_title"><a>Southwest Pasta Salad</a></td></tr>
+
+
+          </tbody>
+        </table>
+          <!-- <a class="article_list a_ovo" href="">
             <li><span>1</span>Grilled Pumpkin and Black Bean Burger</li></a>
           <a class="article_list a_vegan" href="">
             <li><span>2</span>Italian Stuffed Peppers</li></a>
@@ -62,7 +112,7 @@
             <li><span>13</span>Lentil Tortila Soup</li></a>
           <a class="article_list a_vegan" href="">
             <li><span>14</span>Southwest Pasta Salad</li></a>
-        </ul>
+        </ul> -->
       </article>
       <button id="upload_post" onclick="window.open('upload_post.html')">
         Upload My Recipe

@@ -149,9 +149,18 @@ function show_nutrition() {
 }
 
 
-/*   upload_post.html   */
 
+/*   main_recommend.html   */
+// 체크한 비건 타입 레시피만 띄우도록
+let arr_article_list = document.querySelectorAll("tbody tr");
+let check_vegantype = document.querySelectorAll(".article_header input");
 
-
-
-
+for (let i=0; i<check_vegantype; i++) {
+    if (check_vegantype[i].checked != "checked") {
+        for (let j=0; j<arr_article_list; j++) {
+            if (arr_article_list[j].className == check_vegantype[i].value) {
+                arr_article_list[j].style.display = "none";
+            }
+        }
+    }
+}
